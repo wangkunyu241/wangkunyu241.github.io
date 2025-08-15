@@ -11,7 +11,7 @@ navbar_name: "Kunyu Wang"
 email: "kunyuwang@mail.ustc.edu.cn"
 gscholar: y4U2xvMAAAAJ  # This is an example, replace it with your own Google Scholar ID
 github: wangkunyu241
-cv_link: link-to-your-cv-file
+# cv_link: link-to-your-cv-file
 # twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -31,8 +31,8 @@ short_bio: >-
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
 - name: Massachusetts Institute of Technology
