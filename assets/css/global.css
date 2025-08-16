@@ -89,20 +89,3 @@ div.lazy {
 .email-text {
     font-family: Courier, monospace;
 }
-
-.section-list .item {
-  padding: .5rem 0 0.75rem;
-  border-top: 1px solid rgba(0,0,0,.06);
-}
-.section-list .item:first-child { border-top: 0; }
-
-.item-title { font-weight: 600; line-height: 1.2; }
-.item-meta  { color: #6c757d; font-size: 0.95rem; }
-.item-tail  { color: #6c757d; font-size: 0.95rem; margin-top: .15rem; }
-
-.item-date  { color: #6c757d; font-style: italic; white-space: nowrap; }
-
-@media (max-width: 576px) {
-  .item-date { margin-left: .5rem; }
-  .section-list .item { padding: .5rem 0 .75rem; }
-}
