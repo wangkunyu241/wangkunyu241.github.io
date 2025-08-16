@@ -13,13 +13,11 @@
                 <li class="mb-2">
                   <div>
                     <div>{{ item.name }}</div>
-                    <div class="small ml-3 position-relative" style="padding-right: 10em;">
-                      <div>
-                        <div>{{ item.dept }}</div>
-                        <div>{{ item.position }}</div>
-                      </div>
-                      <div class="position-absolute" style="bottom: 0; right: 0; white-space: nowrap;">
-                        <em>{{ item.date }}</em>
+                    <div class="small ml-3" style="overflow: hidden;">
+                      <div>{{ item.dept }}</div>
+                      <div style="overflow: hidden;">
+                        <span style="display: inline;">{{ item.position }}</span>
+                        <span style="float: right; white-space: nowrap;"><em>{{ item.date }}</em></span>
                       </div>
                     </div>
                   </div>
@@ -39,13 +37,11 @@
                 <li class="mb-2">
                   <div>
                     <div>{{ item.name }}</div>
-                                        <div class="small ml-3 position-relative" style="padding-right: 10em;">
-                      <div>
-                        <div>{{ item.dept }}</div>
-                        <div>{{ item.position }}</div>
-                      </div>
-                      <div class="position-absolute" style="bottom: 0; right: 0; white-space: nowrap;">
-                        <em>{{ item.date }}</em>
+                    <div class="small ml-3" style="overflow: hidden;">
+                      <div>{{ item.dept }}</div>
+                      <div style="overflow: hidden;">
+                        <span style="display: inline;">{{ item.position }}</span>
+                        <span style="float: right; white-space: nowrap;"><em>{{ item.date }}</em></span>
                       </div>
                     </div>
                   </div>
