@@ -7,7 +7,7 @@ body_attr: >-
 ---
 <p style="color: black; font-size: 1rem; margin-top: 1rem;">
   <sup>*</sup> equal contribution;&nbsp;&nbsp;&nbsp;
-  <sup>†</sup> corresponding author(s)
+  <sup>†</sup> corresponding author
 </p>
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
