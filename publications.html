@@ -5,6 +5,9 @@ navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
+<p class="mt-4 mb-2 text-muted" style="font-size: 0.95rem;">
+  *: equal contribution; †: corresponding author(s)
+</p>
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
