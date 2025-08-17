@@ -16,8 +16,8 @@ authors:
 - Haoran Liu
 - Songlin Wei
 - Zhongyuan Wang
-- Zhizheng Zhang†
-- He Wang†
+- Zhizheng Zhang<sup>†</sup>
+- He Wang<sup>†</sup>
 links:
   Paper: https://arxiv.org/pdf/2412.06224
   Project page: https://pku-epic.github.io/Uni-NaVid/
