@@ -114,14 +114,13 @@ div.lazy {
     transition: opacity 0.2s ease-in-out;
 }
 
-.cover-wrapper:hover .cover-gif {
+.cover-wrapper.has-gif:hover .cover-gif {
     opacity: 1;
 }
 
-.cover-wrapper:hover .cover-static {
+.cover-wrapper.has-gif:hover .cover-static {
     opacity: 0;
 }
-
 
 .pub-title {
     font-size: 1.1rem;
