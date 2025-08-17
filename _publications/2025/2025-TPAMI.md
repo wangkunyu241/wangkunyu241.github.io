@@ -3,7 +3,6 @@ title:          "SkyFind: A Large-Scale Benchmark Unveiling Referring Expression
 date:           2025-04-01
 selected:       true
 pub:            "Manuscript under major revision at TPAMI"
-pub_date:       "2025"
 abstract: >-
   This is a good paper.
 cover:          /assets/images/covers/TPAMI.jpg
