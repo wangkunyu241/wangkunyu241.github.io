@@ -7,9 +7,9 @@ abstract: >-
   This is a good paper.
 cover:          /assets/images/covers/TPAMI.jpg
 authors:
-- Kunyu Wang<sup>*</sup>
-- Xingbo Wang<sup>*</sup>
-- Kean Liu<sup>*</sup>
+- Kunyu Wang*
+- Xingbo Wang*
+- Kean Liu*
 - Xin Lu
 - Chengjie Ge
 - Wei Zhai
