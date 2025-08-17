@@ -3,7 +3,6 @@ title:          "Towards Better De-raining Generalization via Rainy Characterist
 date:           2025-03-01
 selected:       true
 pub:            "Manuscript under minor revision at TNNLS"
-pub_date:       "2025"
 abstract: >-
   This is a good paper.
 cover:          /assets/images/covers/TNNLS.jpg
