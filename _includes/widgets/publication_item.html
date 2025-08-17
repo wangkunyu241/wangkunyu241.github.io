@@ -3,14 +3,26 @@
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-4 col-xl-3 mb-md-0 p-md-3">
             {%- if item.cover -%}
-                <img 
-                    src="{{ item.cover | relative_url }}" 
-                    alt="{{ item.title }}" 
-                    class="cover-img w-100 rounded-sm"
-                    onmouseover="this.src='{{ item.cover_gif | relative_url }}';"
-                    onmouseout="this.src='{{ item.cover | relative_url }}';">
+              <div class="cover-wrapper {% if item.cover_gif %}has-gif{% endif %}">
+                <img
+                  src="{{ item.cover | relative_url }}"
+                  alt="{{ item.title }}"
+                  class="cover-static"
+                  loading="lazy">
+            
+                {%- if item.cover_gif -%}
+                <img
+                  src="{{ item.cover_gif | relative_url }}"
+                  alt="{{ item.title }} gif"
+                  class="cover-gif">
+                <!-- 预加载，避免首悬停空白 -->
+                <link rel="preload" as="image" href="{{ item.cover_gif | relative_url }}">
+                {%- endif -%}
+              </div>
             {%- else -%}
-                <svg class="bubble-visual-hash lazy w-100 rounded-sm" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
+              <svg class="bubble-visual-hash lazy w-100 rounded-sm"
+                   data-bubble-visual-hash="{{ item.id }}"
+                   viewBox="0 0 300 200"></svg>
             {%- endif -%}
         </div>
         <div class="col-md-8 col-xl-9 p-3 pl-md-0">
