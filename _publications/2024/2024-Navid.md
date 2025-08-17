@@ -5,7 +5,7 @@ selected:       true
 pub:            "RSS"
 pub_date:       "2024"
 abstract: >-
-  This is a good paper.
+  We propose NaVid, the first generalized embodied navigation large model. Driven by foundational Vision-Language Models and co-tuned with web-based data, NaVid transfers general-purpose knowledge to real-world navigation, greatly enhancing generalization. Moreover, NaVid relies solely on monocular video streams, encoding history as video to provide richer and more adaptive context while avoiding generalization challenges from odometer noise and map or depth discrepancies, making it easy to deploy.
 cover:          /assets/images/covers/navid.jpg
 cover_gif:       /assets/images/covers/navid.gif
 authors:
