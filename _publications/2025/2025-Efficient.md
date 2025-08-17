@@ -3,6 +3,7 @@ title:          "Efficient Test-time Adaptive Object Detection via Sensitivity-G
 date:           2025-07-01
 selected:       true
 pub:            "CVPR"
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Oral (3.3% of all accepted papers)</span>'
 pub_date:       "2025"
 abstract: >-
   This is a good paper.
