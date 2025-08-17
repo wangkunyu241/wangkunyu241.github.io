@@ -6,7 +6,7 @@ pub:            "RSS"
 pub_date:       "2024"
 abstract: >-
   This is a good paper.
-cover:          /assets/images/covers/navid.png
+cover:          /assets/images/covers/navid.jpg
 cover_gif:       /assets/images/covers/navid.gif
 authors:
 - Jiazhao Zhang*
