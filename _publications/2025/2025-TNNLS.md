@@ -15,6 +15,6 @@ authors:
 - Zheng-Jun Zha<sup>†</sup>
 links:
   Paper: /assets/images/covers/TNNLS.pdf
-  Supplementary material: /assets/images/covers/TNNLS_sup.pdf
+  Supplementary Material: /assets/images/covers/TNNLS_sup.pdf
   Code: https://github.com/wangkunyu241/CLGID
 ---
