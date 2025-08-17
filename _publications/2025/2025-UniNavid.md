@@ -2,7 +2,7 @@
 title:          "Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks"
 date:           2025-06-01
 selected:       true
-pub:            "RSS 2025"
+pub:            "RSS"
 pub_date:       "2025"
 abstract: >-
   This is a good paper.
