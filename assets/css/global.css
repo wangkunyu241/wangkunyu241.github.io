@@ -94,13 +94,34 @@ div.lazy {
     position: relative;
 }
 
-.cover-wrapper:hover .cover-static {
-    display: none;
+.cover-wrapper img {
+    display: block;
+}
+
+.cover-wrapper .cover-static {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.cover-wrapper .cover-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .cover-wrapper:hover .cover-gif {
-    display: block;
+    opacity: 1;
 }
+
+.cover-wrapper:hover .cover-static {
+    opacity: 0;
+}
+
 .pub-title {
     font-size: 1.1rem;
     font-weight: 600;
