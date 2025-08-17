@@ -91,36 +91,43 @@ div.lazy {
 }
 
 .cover-wrapper {
-    position: relative;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: .25rem;
 }
 
 .cover-wrapper img {
-    display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .cover-wrapper .cover-static {
-    position: relative;
-    z-index: 1;
-    transition: opacity 0.2s ease-in-out;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .cover-wrapper .cover-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.cover-wrapper:hover .cover-gif {
-    opacity: 1;
+.cover-wrapper.has-gif.gif-ready:hover .cover-static {
+  opacity: 0;
 }
 
-.cover-wrapper:hover .cover-static {
-    opacity: 0;
+.cover-wrapper.has-gif.gif-ready:hover .cover-gif {
+  opacity: 1;
 }
+
 
 .pub-title {
     font-size: 1.1rem;
