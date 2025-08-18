@@ -8,9 +8,9 @@ abstract: >-
   We construct a million-scale UAV-based referring expression comprehension dataset to enable precise localization of human-specified targets in UAV imagery. This capability enables efficient retrieval of user-specified targets from massive UAV-captured scenes, replacing manual visual search. It is especially beneficial for time-sensitive or labor-constrained applications such as search and rescue, urban patrol, and agricultural inspection.
 cover:          /assets/images/covers/TPAMI.jpg
 authors:
-- Kunyu Wang<sup>*</sup>
-- Xingbo Wang<sup>*</sup>
-- Kean Liu<sup>*</sup>
+- Kunyu Wang*
+- Xingbo Wang*
+- Kean Liu*
 - Xin Lu
 - Chengjie Ge
 - Wei Zhai
