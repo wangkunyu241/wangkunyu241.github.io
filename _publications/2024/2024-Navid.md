@@ -20,7 +20,7 @@ authors:
 - He Wang<sup>†</sup>
 links:
   Paper: https://arxiv.org/abs/2402.15852.pdf
-  Project page: https://pku-epic.github.io/NaVid/
+  Project Page: https://pku-epic.github.io/NaVid/
   Code: https://github.com/jzhzhang/NaVid-VLN-CE
   Oral Presentation Slides: /assets/images/covers/Navid.pdf
 ---
