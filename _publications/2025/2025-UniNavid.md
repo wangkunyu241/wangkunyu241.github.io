@@ -20,6 +20,6 @@ authors:
 - He Wang<sup>†</sup>
 links:
   Paper: https://arxiv.org/pdf/2412.06224
-  Project page: https://pku-epic.github.io/Uni-NaVid/
+  Project Page: https://pku-epic.github.io/Uni-NaVid/
   Code: https://github.com/jzhzhang/Uni-NaVid
 ---
