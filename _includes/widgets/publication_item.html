@@ -24,8 +24,18 @@
             <h5 class="pub-title">{{ item.title }}</h5>
             <p class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="pub-info">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="pub-abstract">{{ item.abstract }}</p>
-            
+
+            <!-- Abstract toggle start -->
+            <p class="pub-abstract" id="abstract-{{ item.id }}">{{ item.abstract_short }}</p>
+            <button 
+                class="btn btn-sm btn-outline-primary mt-1 mb-2" 
+                onclick="toggleAbstract('{{ item.id }}')"
+                id="toggle-btn-{{ item.id }}"
+            >
+                More
+            </button>
+            <!-- Abstract toggle end -->
+
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
                 {% if link[1].url %}
@@ -35,11 +45,11 @@
                 {% endif %}
                 {% endfor %}
             </p>
-
         </div>
     </div>
 </div>
 
+<!-- Mobile version -->
 <div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}">
     <div class="w-100 {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}" style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
@@ -47,8 +57,18 @@
                 <h5 class="pub-title">{{ item.title }}</h5>
                 <p class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</p>
                 <p class="pub-info">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-                <p class="pub-abstract">{{ item.abstract }}</p>
-                
+
+                <!-- Abstract toggle start -->
+                <p class="pub-abstract" id="abstract-m-{{ item.id }}">{{ item.abstract_short }}</p>
+                <button 
+                    class="btn btn-sm btn-outline-primary mt-1 mb-2" 
+                    onclick="toggleAbstractMobile('{{ item.id }}')"
+                    id="toggle-btn-m-{{ item.id }}"
+                >
+                    More
+                </button>
+                <!-- Abstract toggle end -->
+
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                     {% for link in item.links %}
                     {% if link[1].url %}
@@ -62,3 +82,36 @@
         </div>
     </div>
 </div>
+
+<!-- JavaScript toggle function -->
+<script>
+function toggleAbstract(id) {
+    const abstract = document.getElementById('abstract-' + id);
+    const btn = document.getElementById('toggle-btn-' + id);
+    const shortText = `{{ item.abstract_short | escape }}`;
+    const fullText = `{{ item.abstract | escape }}`;
+
+    if (btn.innerText === 'More') {
+        abstract.innerText = fullText;
+        btn.innerText = 'Fold';
+    } else {
+        abstract.innerText = shortText;
+        btn.innerText = 'More';
+    }
+}
+
+function toggleAbstractMobile(id) {
+    const abstract = document.getElementById('abstract-m-' + id);
+    const btn = document.getElementById('toggle-btn-m-' + id);
+    const shortText = `{{ item.abstract_short | escape }}`;
+    const fullText = `{{ item.abstract | escape }}`;
+
+    if (btn.innerText === 'More') {
+        abstract.innerText = fullText;
+        btn.innerText = 'Fold';
+    } else {
+        abstract.innerText = shortText;
+        btn.innerText = 'More';
+    }
+}
+</script>
