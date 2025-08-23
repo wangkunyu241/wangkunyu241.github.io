@@ -7,6 +7,10 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2025"
 abstract: >-
   The core insight of this paper is that during source-to-target domain transfer, not all source-learned features are beneficial, some can even degrade target performance. Based on this insight, we propose focus adaptation on the helpful parts, and ignore the harmful ones. This selective strategy reduces adaptation difficulty and lowers computational cost, leading to more efficient transfer.
+abstract_short: >-
+  Our key insight is that certain source-learned features hinder rather than help target domain adaptation.
+id:            "CVPR_2025"
+category:            "Machine Learning"
 cover:          /assets/images/covers/Efficient_teasor.jpg
 authors:
 - Kunyu Wang
