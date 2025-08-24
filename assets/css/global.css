@@ -173,11 +173,18 @@ div.lazy {
 .toggle-btn:hover {
   text-decoration: underline;
 }
+
 .subsection-title {
-  color: #000000;
-  font-weight: 600;
+  display: inline-block;
+  line-height: 1.2;
   font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+
   border-left: 3px solid #007bff;
-  margin-top: 0rem;
   padding-left: 0.5rem;
+
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
+
