@@ -11,21 +11,21 @@
   </h6>
 
   {% if ml.size > 0 %}
-    <h6 class="subsection-title px-3 pt-1">Machine Learning</h6>
+    <h6 class="subsection-title px-3 pt-2">Machine Learning</h6>
     {% for item in ml %}
       {% include widgets/publication_item.html item=item first=false last=false %}
     {% endfor %}
   {% endif %}
 
   {% if eai.size > 0 %}
-    <h6 class="subsection-title px-3 pt-1">Embodied AI</h6>
+    <h6 class="subsection-title px-3 pt-2">Embodied AI</h6>
     {% for item in eai %}
       {% include widgets/publication_item.html item=item first=false last=false %}
     {% endfor %}
   {% endif %}
 
   {% if sai.size > 0 %}
-    <h6 class="subsection-title px-3 pt-1">Spatial AI</h6>
+    <h6 class="subsection-title px-3 pt-2">Spatial AI</h6>
     {% for item in sai %}
       {% include widgets/publication_item.html item=item first=false last=false %}
     {% endfor %}
