@@ -152,11 +152,19 @@ div.lazy {
   background: none;
   border: none;
   color: #007bff;
-  font-size: 0.9rem;
   cursor: pointer;
   padding: 0;
+  line-height: 1.2;
+}
+
+/* 更小字号，和 abstract 一致 */
+.small-toggle {
+  font-size: 0.8rem;
+  margin-top: -2px;
+  margin-bottom: 2px;
 }
 
 .toggle-btn:hover {
   text-decoration: underline;
 }
+
