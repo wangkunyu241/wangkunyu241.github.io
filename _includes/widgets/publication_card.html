@@ -1,4 +1,4 @@
-{% assign publications = include.publications %}
+<!-- {% assign publications = include.publications %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-xl">
     <h6 class="border-bottom border-gray p-3 mb-0">
         {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %} 
@@ -10,5 +10,47 @@
     <h6 class="d-block p-3 mt-0 text-right">
         <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
     </h6>
+</div> -->
+
+{% assign all_selected = include.publications | where: "selected", true %}
+
+{% assign ml  = all_selected | where: "category", "Machine Learning" | sort: "date" | reverse %}
+{% assign eai = all_selected | where: "category", "Embodied AI"     | sort: "date" | reverse %}
+{% assign sai = all_selected | where: "category", "Spatial AI"      | sort: "date" | reverse %}
+
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+  <!-- 主标题 -->
+  <h6 class="border-bottom border-gray p-3 mb-0">
+    {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %} 
+    <a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+  </h6>
+
+  <!-- Machine Learning -->
+  {% if ml.size > 0 %}
+    <h6 class="subsection-title px-3 pt-3 text-muted">Machine Learning</h6>
+    {% for item in ml %}
+      {% include widgets/publication_item.html item=item first=false last=false %}
+    {% endfor %}
+  {% endif %}
+
+  <!-- Embodied AI -->
+  {% if eai.size > 0 %}
+    <h6 class="subsection-title px-3 pt-3 text-muted">Embodied AI</h6>
+    {% for item in eai %}
+      {% include widgets/publication_item.html item=item first=false last=false %}
+    {% endfor %}
+  {% endif %}
+
+  <!-- Spatial AI -->
+  {% if sai.size > 0 %}
+    <h6 class="subsection-title px-3 pt-3 text-muted">Spatial AI</h6>
+    {% for item in sai %}
+      {% include widgets/publication_item.html item=item first=false last=false %}
+    {% endfor %}
+  {% endif %}
+
+  <h6 class="d-block p-3 mt-0 text-right">
+    <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
+  </h6>
 </div>
 
