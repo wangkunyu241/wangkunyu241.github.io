@@ -147,3 +147,16 @@ div.lazy {
     line-height: 1.4;
     margin-bottom: 0.4rem;
 }
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
