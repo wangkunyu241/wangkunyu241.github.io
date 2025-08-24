@@ -7,7 +7,7 @@ pub_date:       "2025"
 abstract: >-
   We propose Uni-NaVid, a navigation generalist that brings together multiple tasks within a single model, including Vision-and-Language Navigation, Object Navigation, Embodied Question Answering, and Human-Following. The central insight behind this unification is that different tasks create synergy beyond what specialists can achieve. On the technical side, Uni-NaVid adopts an online token merging strategy for achieving about 5 Hz model inference, and predicts action for multiple future steps for enabling non-blocking deployment in the real world.
 abstract_short: >-
-  We propose Uni-NaVid, a navigation generalist unifying multiple tasks in one model.
+  We propose Uni-NaVid, a navigation generalist unifying multiple skills in one model, including VLN, ObjNav, EQA, and Human-Following.
 id:            "RSS_2025"
 category:            "Embodied AI"
 cover_gif:       /assets/images/covers/uni-navid.gif
@@ -25,4 +25,5 @@ links:
   Paper: https://arxiv.org/pdf/2412.06224
   Project Page: https://pku-epic.github.io/Uni-NaVid/
   Code: https://github.com/jzhzhang/Uni-NaVid
+  Uni-Navid on CSDN: https://blog.csdn.net/lovely_yoshino/article/details/144823010
 ---
