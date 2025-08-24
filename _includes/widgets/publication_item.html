@@ -25,7 +25,7 @@
       <!-- Abstract toggle -->
       <p class="pub-abstract" id="abstract-pc-{{ item.id }}">{{ item.abstract_short }}</p>
       <button 
-        class="toggle-btn" 
+        class="toggle-btn small-toggle" 
         onclick="toggleAbstract('pc', '{{ item.id }}')" 
         id="toggle-btn-pc-{{ item.id }}"
         data-short="{{ item.abstract_short | escape }}"
@@ -58,11 +58,11 @@
         <p class="pub-info">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
 
         <!-- Abstract toggle -->
-        <p class="pub-abstract" id="abstract-m-{{ item.id }}">{{ item.abstract_short }}</p>
+        <p class="pub-abstract" id="abstract-pc-{{ item.id }}">{{ item.abstract_short }}</p>
         <button 
-          class="toggle-btn" 
-          onclick="toggleAbstract('m', '{{ item.id }}')" 
-          id="toggle-btn-m-{{ item.id }}"
+          class="toggle-btn small-toggle" 
+          onclick="toggleAbstract('pc', '{{ item.id }}')" 
+          id="toggle-btn-pc-{{ item.id }}"
           data-short="{{ item.abstract_short | escape }}"
           data-full="{{ item.abstract | escape }}"
         >
@@ -94,7 +94,7 @@ function toggleAbstract(mode, id) {
 
   if (btn.innerText.startsWith("More")) {
     abstract.innerText = fullText;
-    btn.innerText = "Less ▲";
+    btn.innerText = "Fold ▲";
   } else {
     abstract.innerText = shortText;
     btn.innerText = "More ▼";
