@@ -145,7 +145,7 @@ div.lazy {
     font-size: 0.8rem;
     color: #666;
     line-height: 1.4;
-    margin-bottom: 0.1rem;
+    margin-bottom: -0.2rem;
 }
 
 .toggle-btn {
