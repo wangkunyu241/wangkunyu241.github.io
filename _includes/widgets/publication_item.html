@@ -60,18 +60,16 @@
                 <p class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</p>
                 <p class="pub-info">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
 
-                <!-- Abstract toggle start -->
-                <p class="pub-abstract" id="abstract-m-{{ item.id }}">{{ item.abstract_short }}</p>
+                <p class="pub-abstract" id="abstract-{{ item.id }}">{{ item.abstract_short }}</p>
                 <button 
-                    class="btn btn-sm btn-outline-primary mt-1 mb-2" 
-                    onclick="toggleAbstractMobile('{{ item.id }}')"
-                    id="toggle-btn-m-{{ item.id }}"
+                    class="toggle-btn" 
+                    onclick="toggleAbstract('{{ item.id }}')" 
+                    id="toggle-btn-{{ item.id }}"
                     data-short="{{ item.abstract_short | escape }}"
                     data-full="{{ item.abstract | escape }}"
                 >
-                    More
+                    More ▼
                 </button>
-                <!-- Abstract toggle end -->
 
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                     {% for link in item.links %}
