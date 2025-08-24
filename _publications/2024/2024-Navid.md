@@ -26,4 +26,5 @@ links:
   Project Page: https://pku-epic.github.io/NaVid/
   Code: https://github.com/jzhzhang/NaVid-VLN-CE
   Oral Presentation Slides: /assets/images/covers/Navid.pdf
+  NaVid on Baidu Encyclopedia: https://baike.baidu.com/item/NaVid/64546885
 ---
