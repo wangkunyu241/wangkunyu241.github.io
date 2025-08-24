@@ -31,6 +31,8 @@
                 class="btn btn-sm btn-outline-primary mt-1 mb-2" 
                 onclick="toggleAbstract('{{ item.id }}')"
                 id="toggle-btn-{{ item.id }}"
+                data-short="{{ item.abstract_short | escape }}"
+                data-full="{{ item.abstract | escape }}"
             >
                 More
             </button>
@@ -64,6 +66,8 @@
                     class="btn btn-sm btn-outline-primary mt-1 mb-2" 
                     onclick="toggleAbstractMobile('{{ item.id }}')"
                     id="toggle-btn-m-{{ item.id }}"
+                    data-short="{{ item.abstract_short | escape }}"
+                    data-full="{{ item.abstract | escape }}"
                 >
                     More
                 </button>
@@ -88,8 +92,8 @@
 function toggleAbstract(id) {
     const abstract = document.getElementById('abstract-' + id);
     const btn = document.getElementById('toggle-btn-' + id);
-    const shortText = `{{ item.abstract_short | escape }}`;
-    const fullText = `{{ item.abstract | escape }}`;
+    const shortText = btn.dataset.short;
+    const fullText = btn.dataset.full;
 
     if (btn.innerText === 'More') {
         abstract.innerText = fullText;
@@ -103,8 +107,8 @@ function toggleAbstract(id) {
 function toggleAbstractMobile(id) {
     const abstract = document.getElementById('abstract-m-' + id);
     const btn = document.getElementById('toggle-btn-m-' + id);
-    const shortText = `{{ item.abstract_short | escape }}`;
-    const fullText = `{{ item.abstract | escape }}`;
+    const shortText = btn.dataset.short;
+    const fullText = btn.dataset.full;
 
     if (btn.innerText === 'More') {
         abstract.innerText = fullText;
