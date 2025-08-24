@@ -88,34 +88,18 @@
 </div>
 
 <!-- JavaScript toggle function -->
-<script>
 function toggleAbstract(id) {
     const abstract = document.getElementById('abstract-' + id);
     const btn = document.getElementById('toggle-btn-' + id);
     const shortText = btn.dataset.short;
     const fullText = btn.dataset.full;
 
-    if (btn.innerText === 'More') {
+    if (btn.innerText.startsWith("More")) {
         abstract.innerText = fullText;
-        btn.innerText = 'Fold';
+        btn.innerText = "Less ▲";
     } else {
         abstract.innerText = shortText;
-        btn.innerText = 'More';
+        btn.innerText = "More ▼";
     }
 }
 
-function toggleAbstractMobile(id) {
-    const abstract = document.getElementById('abstract-m-' + id);
-    const btn = document.getElementById('toggle-btn-m-' + id);
-    const shortText = btn.dataset.short;
-    const fullText = btn.dataset.full;
-
-    if (btn.innerText === 'More') {
-        abstract.innerText = fullText;
-        btn.innerText = 'Fold';
-    } else {
-        abstract.innerText = shortText;
-        btn.innerText = 'More';
-    }
-}
-</script>
