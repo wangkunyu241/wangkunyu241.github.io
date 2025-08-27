@@ -25,7 +25,6 @@
   {% endif %}
 
   {% if sai.size > 0 %}
-    <h6 class="subsection-title px-3 pt-3">Spatial AI</h6>
     {% for item in sai %}
       {% include widgets/publication_item.html item=item first=false last=false %}
     {% endfor %}
