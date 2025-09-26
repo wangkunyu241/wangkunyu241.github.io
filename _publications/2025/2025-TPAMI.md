@@ -22,5 +22,5 @@ authors:
 - Zheng-Jun Zha<sup>†</sup>
 links:
   Paper: /assets/images/covers/TPAMI.pdf
-  Code: https://github.com/wangkunyu241/SkyFind
+  Dataset: https://github.com/wangkunyu241/SkyFind
 ---
