@@ -11,9 +11,10 @@ id:            "TPAMI_2025"
 category:            "Spatial AI"
 cover:          /assets/images/covers/TPAMI.jpg
 authors:
-- Kunyu Wang*
-- Xingbo Wang*
-- Kean Liu*
+- Kunyu Wang
+- Guanbo Wu
+- Xingbo Wang
+- Kean Liu
 - Xin Lu
 - Chengjie Ge
 - Wei Zhai
